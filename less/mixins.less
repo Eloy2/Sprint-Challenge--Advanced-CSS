@@ -1,1 +1,19 @@
 // Mixins Here
+
+.flex(@f, @j, @a) {
+    display: flex;
+    flex-direction: @f;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.margin-bottom() {
+    margin-bottom: 1%;
+}
+
+.btn(@c, @f) {
+    text-decoration: none;
+    background-color: @btn-bg-color;
+    color: @c;
+    font-size: @f;
+}

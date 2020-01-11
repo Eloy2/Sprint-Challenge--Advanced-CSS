@@ -33,14 +33,29 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Responsive websites fit to the size of the screen they are in at any given point. Adaptive websites make use of static breakpoints set by media queries.
+
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first means that you would make your site mobile size first and then work up
+to desktop size by making things bigger and/or adding more things to the site. Desktop first is the opposite. You would make the desktop version of the site first and then you would make everything smaller and/or remove things such as images to fit the mobile version of the site.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+It is 10/16. This makes it easier to calculate rems when we use them in our site. 
+1rem = 10px when we use 62.5% in html tag. 1rem = 16px when we don’t use 62.5%.
+
 
 4. How would you describe preprocessing to someone new to CSS?
+A preprocessor allows us to write a lot less code to achieve the same result that we want to.  
+We would write code in the preprocessor file while we are running a watcher that watches the
+file we are working on for changes. Then any changes we make will be compiled and placed on
+the index.css file in css syntax.
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+My favorite concept is parametric mixins. I like them because they are flexible and they help me keep my code dry so I don’t have to keep writing the same thing over and over. I can’t think of a concept that gives me trouble.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

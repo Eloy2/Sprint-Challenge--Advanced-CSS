@@ -1,8 +1,17 @@
 // Home Content
 
+
+
 .home {
 
   .intro {
+
+    img {
+      border-radius: 5px;
+      @media @phone {
+        width: 100%;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -19,7 +28,26 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
     img {
+      @media @phone {
+        width: 90%;
+        .flex(column, center, center);
+        margin: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+      }
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
@@ -46,8 +74,20 @@
     display: flex;
     justify-content: center;
 
+    
+    @media @phone {
+      .flex(column-reverse, center, center);
+      padding-left: 0%;
+      padding-right: 0%;
+      padding-top: 4%;
+      margin-top: 3%;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 90%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +98,38 @@
       }
 
       .btn {
+        @media @phone {
+          width: 100%;
+          .flex(column, center, center);
+        }
+        a{
+          @media @phone {
+            width: 100%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+          }
+          text-align: center;
+          .btn(white, 2rem);
+          border-radius: 5px;
+          border: 1px solid @btn-bg-color;
+          padding: 2% 4% 2% 4%;
+          &:hover {
+            color: @btn-bg-color;
+            background-color: white;
+          }
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 3%;
+      }
       
       img {
         width: 100%;
